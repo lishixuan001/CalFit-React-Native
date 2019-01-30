@@ -29,7 +29,7 @@ export default class Login extends Component {
                 <View style={styles.logo}>
                     <Image
                         style={{width: 100, height: 100}}
-                        source={require('../../resources/hrt2hrt.png')}
+                        source={require('../../resources/logo.png')}
                     />
                 </View>
 

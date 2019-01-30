@@ -11,7 +11,7 @@ import ViewContainer from '../../components/ViewContainer'
 import StatusbarBackground from '../../components/StatusbarBackground'
 import {styles} from './styles'
 
-export default class Login extends Component {
+export default class Register extends Component {
     constructor(props) {
         super(props)
 
@@ -28,8 +28,8 @@ export default class Login extends Component {
 
                 <View style={styles.logoReg}>
                     <Image
-                        style={{width: 75, height: 75}}
-                        source={require('../../resources/hrt2hrt.png')}
+                        style={{width: 100, height: 100}}
+                        source={require('../../resources/logo.png')}
                     />
                 </View>
 
@@ -60,20 +60,26 @@ export default class Login extends Component {
                     />
 
                     <View style={styles.hairline} />
+
+                        <TextInput
+                            style={styles.textInput}
+                            onChangeText={(text) => this.setState({password: text})}
+                            value={this.state.password}
+                            placeholder="RE-PASSWORD"
+                            placeholderTextColor="black"
+                            secureTextEntry={true}
+                            autoCorrect={false}
+                            returnKeyType="go"
+                            keyboardAppearance="dark"
+                        />
+
+                        <View style={styles.hairline} />
                 </View>
 
                 <View style={styles.login}>
                     <TouchableOpacity style={styles.loginButton}>
                         <Text style={styles.loginButtonText}>
-                            Log In
-                        </Text>
-                    </TouchableOpacity>
-                </View>
-
-                <View style={styles.register}>
-                    <TouchableOpacity style={styles.registerButton}>
-                        <Text style={styles.registerButtonText}>
-                            Create Account
+                            CREATE ACCOUNT
                         </Text>
                     </TouchableOpacity>
                 </View>
