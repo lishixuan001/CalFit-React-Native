@@ -11,7 +11,7 @@ import Profile from './scenes/Profile'
 export default class App extends Component {
     render() {
         return (
-            <Profile />
+            <Login />
         )
     }
 }

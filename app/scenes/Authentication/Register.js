@@ -61,19 +61,19 @@ export default class Register extends Component {
 
                     <View style={styles.hairline} />
 
-                        <TextInput
-                            style={styles.textInput}
-                            onChangeText={(text) => this.setState({password: text})}
-                            value={this.state.password}
-                            placeholder="RE-PASSWORD"
-                            placeholderTextColor="black"
-                            secureTextEntry={true}
-                            autoCorrect={false}
-                            returnKeyType="go"
-                            keyboardAppearance="dark"
-                        />
+                    <TextInput
+                        style={styles.textInput}
+                        onChangeText={(text) => this.setState({verifyPassword: text})}
+                        value={this.state.password}
+                        placeholder="RE-PASSWORD"
+                        placeholderTextColor="black"
+                        secureTextEntry={true}
+                        autoCorrect={false}
+                        returnKeyType="go"
+                        keyboardAppearance="dark"
+                    />
 
-                        <View style={styles.hairline} />
+                    <View style={styles.hairline} />
                 </View>
 
                 <View style={styles.login}>
