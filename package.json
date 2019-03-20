@@ -8,7 +8,8 @@
 	},
 	"dependencies": {
 		"react": "16.0.0-alpha.6",
-		"react-native": "0.44.3"
+		"react-native": "0.44.3",
+		"react-native-storage": "^1.0.0-beta.1"
 	},
 	"devDependencies": {
 		"babel-jest": "24.0.0",
